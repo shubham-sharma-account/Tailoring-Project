@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../img/logbg2.jpg");
+  background-size: cover;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  background-color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+input[type="password"] {
+  width: 100%;
+  background-color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 18px;
+}
+input[type="number"] {
+  width: 100%;
+  background-color: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 18px;
+}
+input[type="email"] {
+  width: 100%;
+  background-color: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 18px;
+}
+.error {
+  color: white;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+}
+input[type="button"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+  width: 40%;
+  margin: 3% 30% 0 30%;
+}
+
+.col-75 {
+  float: left;
+  width: 85%;
+  margin-top: 6px;
+  margin-left: 7%;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 15px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tailor_profile {
+  width: 40%;
+  margin: 2% 0 0 37%;
+  border: 5px solid white;
+  padding: 25px;
+ background-color: rgba(21, 21, 22, 0.4); 
+  background-blend-mode: difference;
+  border-radius: 10px;
+   clear:both;
+}
+.tailor_profile i{
+  margin-left: -30px;
+}
+p {
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+}
+#update_btn{
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 3% 0 0 2%;
+}
+#update_btn:hover{
+  background: #45a049;
+}
+#close_btn{
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  float:right;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#try_agn {
+  color: black;
+}
+#alert2 {
+  margin-left: 5%;
+}
+
+#alert,
+#alert2 {
+  position: absolute;
+  left: 37%;
+  top: 30%;
+  background-color: rgba(21, 21, 22, 0.9);
+  background-size: 100% 100%;
+  width: 30%;
+  color: black;
+  display: none;
+  height: 35%;
+  text-align: center;
+  border-radius: 2%;
+}#msg1,#msg2 ,h2{
+  color: white;
+}
+#alert_btn,
+#try_agn {
+  width: 25%;
+  height: 18%;
+  padding: 10px;
+  font-size: 20px;
+  margin:12% 0 0 4%;
+  border-radius: 8px;
+  border:none;
+  color:white;
+  background-color: green;
+}
+.stu_search_container {
+  margin-top: 2%;
+  margin-left: 13%;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

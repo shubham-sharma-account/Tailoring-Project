@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+body {
+  background-repeat: no-repeat;
+  background-image: url("../img/logbg2.jpg");
+  background-color: #003;
+  background-blend-mode: difference;
+}
+
+header {
+  background-color: rgba(21, 21, 22, 0.4);
+  padding: 20px;
+  height: 70px;
+  position: relative;
+}
+.left_area h3 {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left_area span {
+  font-family: 'Indie Flower', cursive;
+  color: #4caf50;
+}
+
+.logout_btn {
+  padding: 10px;
+  background: #4caf50;
+  text-decoration: none;
+  float: right;
+  margin-top: -35px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.logout_btn:hover {
+  background: #45a049;
+}
+.sidebar {
+  float: left;
+  background-color: rgba(21, 21, 22, 0.4);
+  left: 0;
+  width: 270px;
+  height: 91vh;
+  position: absolute;
+}
+.sidebar h4 {
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  border-bottom: 1px solid white;
+}
+
+.sidebar a:hover {
+  background: green;
+}
+
+.sidebar i {
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.active {
+  background-color: green ;
+}
+.container {
+  width: 75%;
+  margin-left: 275px;
+}
+.column {
+  float: left;
+  text-align: center;
+  width: 30%;
+  margin:20px 20px 10px 10px  ;
+  border-radius: 15px;
+  background-color: green;
+}
+.order {
+  display: inline;
+  font-size: 22px;
+  margin-left: 10px;
+  color: white;
+}
+#status_btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 22px;
+  background-color: white;
+  color: green;
+  border-radius: 0 0 15px 15px;
+}
+/* .info {
+  width: 60%;
+  margin-top: 2%;
+  background-color: yellow;
+} */
+label {
+  font-size: 25px;
+  color: white;
+}
+.stu_search_container_left {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 2% 0 0 40%;
+  width: 35%;
+}
+.stu_search_container_right {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 25px;
+  width: 35%;
+  margin: 2% 0 0 40%;
+}
+input[type="email"] {
+  width: 90%;
+  margin: 10px 0 10px 0;
+  background-color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+th,td {
+  font-size: 18px;
+  padding: 14px;
+  text-align: center;
+}
+tr:nth-child(even){
+  background-color:lightgray;
+}
+th{
+  background-color: #4caf50;
+  color: white;
+}
+table {
+  float: left;
+  border-collapse: collapse;
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  margin-left:18%;
+  margin-top: 5%;
+  overflow: hidden;
+}
+  /**** Confirmation box *******/
+    #confirm_box,#confirm_box2{
+        width:30%;
+        height:40%;
+        background-color: rgba(21, 21, 22, 0.9);
+        position:absolute;
+        left:43%;
+        top:30%;
+        border-radius:10px;
+        }
+    #delete_btn,#delete_btn2{
+        float: right;
+        width: 25%;
+        height: 15%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: green;
+        margin: 10% 16%;
+    }
+    #confirm_box_cancel_btn,#confirm_box_cancel_btn2{
+        float: right;
+        width: 25%;
+        height: 15%;
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 10%;
+        color:white;
+        border-radius: 10px;
+        background-color:green;
+    }
+    #confirm_msg,#confirm_msg2{
+        color:white;
+        margin:50px;
+        text-align:center;
+    }
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+    margin-left: 25%;
+    overflow: hidden;
+    padding: 20px;
+  }
+}
